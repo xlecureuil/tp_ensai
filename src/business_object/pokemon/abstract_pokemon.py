@@ -1,6 +1,5 @@
-import copy
 from abc import ABC, abstractmethod
-from business_object.statistic import Statistic
+from src.business_object.statistic import Statistic
 
 
 class AbstractPokemon(ABC):
@@ -39,29 +38,29 @@ class AbstractPokemon(ABC):
         """
         pass
 
-    @abstractmethod
-    def level_up(self) -> None:
-        """
-        Increase the level by one.
-        Must be implemented by subclasses.
-        """
-        pass
+    # @abstractmethod
+    # def level_up(self) -> None:
+    #     """
+    #     Increase the level by one.
+    #     Must be implemented by subclasses.
+    #     """
+    #     pass
 
-    @abstractmethod
-    def reset_actual_stat(self) -> None:
-        """
-        Reset the actual stats of the Pokemon.
-        Must be implemented by subclasses.
-        """
-        pass
+    # @abstractmethod
+    # def reset_actual_stat(self) -> None:
+    #     """
+    #     Reset the actual stats of the Pokemon.
+    #     Must be implemented by subclasses.
+    #     """
+    #     pass
 
-    @abstractmethod
-    def get_hit(self, damage) -> None:
-        """
-        Decrease health point when receiving damages.
-        Must be implemented by subclasses.
-        """
-        pass
+    # @abstractmethod
+    # def get_hit(self, damage) -> None:
+    #     """
+    #     Decrease health point when receiving damages.
+    #     Must be implemented by subclasses.
+    #     """
+    #     pass
 
     # -------------------------------------------------------------------------
     # Methods
